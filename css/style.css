@@ -134,7 +134,10 @@ article:hover>img {
         width: 96%;
         padding: 0 2% 0 2%;
     }
-    textarea {
-        width: 12em;
+    #ben:active, #ben:hover ~ main#ben {
+        display: flex;
+    }
+    #pro:active, #pro:hover ~ main#pro {
+        display: flex;
     }
 }
