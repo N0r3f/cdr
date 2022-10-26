@@ -24,7 +24,7 @@ input, textarea {
     width: 95%;
     height: 100%;
     padding-left: 2em;
-    outline: 1px solid rgb(134, 134, 134);
+    outline: none;
     border: 1px solid rgb(113, 113, 113);
     box-shadow: inset 1px 1px 4px rgb(71, 71, 71);
     margin: 10px;
@@ -39,7 +39,7 @@ textarea {
     padding: 1em 1em 1em 2em;
     border-radius: 20px 20px 0 20px;
 }
-aside {
+span {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -55,10 +55,10 @@ aside {
     border: 2px solid rgb(179, 179, 179);
 }
 @media screen and (max-width: 750px) {
-    form, textarea, input, aside {
+    form, textarea, input, span {
         width: 80%;
     }
-    aside, form {
+    span, form {
         margin: 2em 0 2em 0 ;
     }
 }

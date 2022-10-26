@@ -19,12 +19,23 @@ body {
     font-weight: bold;
     text-justify: distribute;
 }
-section {
+main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: space-around;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+aside {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    border-radius: 50px;
+    padding: 4%;
+    margin: 4%;
+    width: 30%;
     height: auto;
 }
 a#ben, a#pro {
@@ -38,13 +49,13 @@ a#ben, a#pro {
     margin: 2%;
     text-shadow: 8px 12px 80px;
 }
-#ben:active, #ben:focus ~ main#ben {
+#ben:active, #ben:focus ~ section#ben {
     display: flex;
 }
-#pro:active, #pro:focus ~ main#pro {
+#pro:active, #pro:focus ~ section#pro {
     display: flex;
 }
-main {
+section {
     display: none;
     flex-flow: row wrap;
     align-items: space-around;
@@ -61,7 +72,7 @@ main {
     inset -1px -1px 10px rgb(110, 110, 110);
     padding: 1%;
 }
-main:hover {
+section:hover {
     height: auto;
 }
 article {
@@ -123,21 +134,33 @@ article:hover>img {
         justify-content: space-between;
         align-items: center;
     }
-    section {
+    main {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        height: 80%;
+    }
+    aside {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        width: 96%;
+        width: 80%;
+        height: auto;
     }
-    main, article {
-        width: 96%;
-        padding: 0 2% 0 2%;
+    article {
+        margin-top: 0;
     }
-    #ben:active, #ben:hover ~ main#ben {
+    section, article {
+        width: 96%;
+        padding: 2% 4% 2% 4%;
+    }
+    #ben:active ~ section#ben {
         display: flex;
     }
-    #pro:active, #pro:hover ~ main#pro {
+    #pro:active ~ section#pro {
         display: flex;
     }
 }
