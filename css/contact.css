@@ -54,7 +54,12 @@ span {
     box-shadow: 1px 1px 40px rgb(79, 79, 79);
     border: 2px solid rgb(179, 179, 179);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
+    body {
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    }
     form, textarea, input, span {
         width: 80%;
     }
