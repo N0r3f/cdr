@@ -38,7 +38,7 @@ menu:nth-child(2) {
 a:active ~ input[type="search"],
 a:focus ~ input[type="search"] {
     display: block;
-    width: 20em;
+    width: auto;
     box-shadow: 1px 1px 4px rgb(58, 58, 58);
     padding: 0 1em 0 1em;
 }
@@ -65,6 +65,6 @@ input[type="search"]:focus {
     display: block;
     border: 2px solid black;
     box-shadow: 1px 1px 4px rgb(58, 58, 58);
-    width: 20em;
+    width: auto;
     padding: 0 1em 0 1em;
 }
