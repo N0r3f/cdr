@@ -156,10 +156,10 @@ article:hover>img {
     section, article {
         padding: 2% 4% 2% 4%;
     }
-    #ben:active ~ section#ben {
+    #ben:focus #ben:active ~ section#ben {
         display: flex;
     }
-    #pro:active ~ section#pro {
+    #ben:focus #pro:active ~ section#pro {
         display: flex;
     }
 }
