@@ -60,7 +60,7 @@ section {
     flex-flow: row wrap;
     align-items: space-around;
     justify-content: space-around;
-    width: 30%;
+    width: 80%;
     height: auto;
     border: 1px solid hsl(0, 0%, 44%);
     margin-bottom: 5vh;
@@ -154,7 +154,6 @@ article:hover>img {
         margin-top: 0;
     }
     section, article {
-        width: 96%;
         padding: 2% 4% 2% 4%;
     }
     #ben:active ~ section#ben {
