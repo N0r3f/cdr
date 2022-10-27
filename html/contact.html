@@ -10,8 +10,8 @@
 <body>
     <header>
         <menu>
-            <a href="#" onclick="this.focus()"><img id="searchbar" src="../media/assets/search.png" alt="Recherche" title="Recherche"></a>
-            <form action="." id="search">
+            <a href="#" onclick="document.getElementById('search').focus()"><img onclick="this.focus()" id="searchbar" src="../media/assets/search.png" alt="Recherche" title="Recherche"></a>
+            <form action="." id="searchform">
             <input type="search" name="search" id="search" role="search">
             </form>
         </menu>
@@ -40,7 +40,7 @@
         <menu class="footer">
             <a href="contact.html"><img class="link" src="../media/assets/mail.png" alt="Contact" title="Contact"></a>
             <a href="user.html"><img class="link" src="../media/assets/user.png" alt="Profil" title="Profil"></a>
-            <a href="#"><img class="link" src="../media/assets/settings.png" alt="Paramètres" title="Paramètres"></a>
+            <a href="settings.html"><img class="link" src="../media/assets/settings.png" alt="Paramètres" title="Paramètres"></a>
             <a href="#"><img class="link" src="../media/assets/lock.png" alt="Se deconnecter" title="Se deconnecter"></a>
         </menu>
     </footer>

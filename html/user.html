@@ -10,8 +10,8 @@
 <body>
     <header>
         <menu>
-            <a href="#" onclick="this.focus()"><img id="searchbar" src="../media/assets/search.png" alt="Recherche" title="Recherche"></a>
-            <form action="." id="search">
+            <a href="#" onclick="document.getElementById('search').focus()"><img onclick="this.focus()" id="searchbar" src="../media/assets/search.png" alt="Recherche" title="Recherche"></a>
+            <form action="." id="searchform">
             <input type="search" name="search" id="search" role="search">
             </form>
         </menu>
@@ -22,8 +22,9 @@
     <form action="newUser.php" method="post">
         <h2>Inscription</h2>
         <input type="mail" name="mail" placeholder="Votre adresse mail">
-        <input type="name" name="name" placeholder="Vos noms et prénoms">
-        <input type="password" name="password" placeholder="Votre mot de passe">
+        <input type="name" name="prenom" placeholder="Votre prénom">
+        <input type="name" name="nom" placeholder="Votre nom">
+        <input type="text" name="pseudo" placeholder="Votre pseudonyme">
         <input type="hidden" name="honeypot">
         <input type="submit">
     </form>
@@ -38,7 +39,7 @@
         <menu class="footer">
             <a href="contact.html"><img class="link" src="../media/assets/mail.png" alt="Contact" title="Contact"></a>
             <a href="user.html"><img class="link" src="../media/assets/user.png" alt="Profil" title="Profil"></a>
-            <a href="#"><img class="link" src="../media/assets/settings.png" alt="Paramètres" title="Paramètres"></a>
+            <a href="settings.html"><img class="link" src="../media/assets/settings.png" alt="Paramètres" title="Paramètres"></a>
             <a href="#"><img class="link" src="../media/assets/lock.png" alt="Se deconnecter" title="Se deconnecter"></a>
         </menu>
     </footer>
