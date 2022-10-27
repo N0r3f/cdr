@@ -72,7 +72,7 @@ input[type="search"]:focus {
 @media screen and (max-width: 750px) {
     menu:nth-child(1),
     input[type="search"] {
-        width: 6em;
+        width: 15em;
     }
     #search ~ input[type="search"]:hover,
     #search ~ input[type="search"]:focus,
