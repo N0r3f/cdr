@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/form.css">
-    <title>Contact</title>
+    <title>Profil utilisateur</title>
 </head>
 <body>
     <header>
@@ -17,23 +17,21 @@
             <a href="../index.html"><img class="link" src="../media/assets/home.png" alt="Accueil" title="Accueil"></a>
         </menu>
     </header>
-    <form action="mail.php" method="post">
+    <form action="newUser.php" method="post">
+        <h2>Inscription</h2>
         <input type="mail" name="mail" placeholder="Votre adresse mail">
         <input type="name" name="name" placeholder="Vos noms et prénoms">
-        <input type="text" name="subject" placeholder="Le sujet de votre message">
-        <textarea name="message" placeholder="Votre message..." id="message"></textarea>
+        <input type="password" name="password" placeholder="Votre mot de passe">
+        <input type="hidden" name="honeypot">
         <input type="submit">
     </form>
-    <span>
-        <h2>Responsable ressources</h2>
-        <h3>Anne Guyader</h3>
-        <address>anne@tisserands.bzh</address>
-        <h4>06 43 38 39 49</h4>
-        <h2>Responsable technique</h2>
-        <h3>Adrien Ferron</h3>
-        <address>site@lacapsule.org</address>
-        <h4>07 86 44 77 52</h4>
-    </span>
+    <form action="oldUser.php">
+        <h2>Connexion</h2>
+        <input type="mail" name="mail" placeholder="Votre adresse mail">
+        <input type="password" name="password" placeholder="Votre mot de passe">
+        <input type="hidden" name="honeypot">
+        <input type="submit">
+    </form>
     <footer>
         <menu class="footer">
             <a href="contact.html"><img class="link" src="../media/assets/mail.png" alt="Contact" title="Contact"></a>
