@@ -1,8 +1,5 @@
 @import url(header.css);
-@import url(contact.css);
-@import url(user.css);
-@import url(settings.css);
-@import url(deconnexion.css);
+@import url(form.css);
 @import url(footer.css);
 body {
     display: flex;

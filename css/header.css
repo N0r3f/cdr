@@ -17,7 +17,7 @@ menu:nth-child(1) {
     align-items: center;
     justify-content: flex-start;
     margin-left: -1em;
-    width: 6em;
+    width: 15em;
 }
 menu:nth-child(2) {
     display: flex;
@@ -35,23 +35,39 @@ menu:nth-child(2) {
     height: auto;
     z-index: 2;
 }
-a:active ~ form#search>input[type="search"],
-a:focus ~ form#search>input[type="search"] {
-    display: block;
-    width: 10em;
-    box-shadow: 1px 1px 4px rgb(58, 58, 58);
-    padding: 0 1em 0 1em;
-}
-form#search>input[type="search"] {
+#searchform {
     display: none;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    width: 10em;
+    width: 16em;
     height: 2.8em;
     border-radius: 50px;
     bottom: 1px;
+    font-size: 0.9em;
+    font-weight: bolder; 
+    outline: none;
+    border: none;
+    background: transparent;
+    z-index: 1;
+}
+a:hover ~ #searchform,
+a:active ~ #searchform,
+a:focus ~ #searchform {
+    display: flex;
+}
+input#search {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 16em;
+    height: 2.8em;
+    border-radius: 50px;
+    bottom: 1px;
+    padding: 0 1em 0 1em;
     font-size: 0.9em;
     font-weight: bolder; 
     outline: none;
@@ -59,24 +75,4 @@ form#search>input[type="search"] {
     box-shadow: 2px 2px 8px rgb(58, 58, 58);
     background: whitesmoke;
     z-index: 1;
-}
-form#search>input[type="search"]:hover,
-form#search>input[type="search"]:active,
-form#search>input[type="search"]:focus {
-    display: block;
-    border: 2px solid black;
-    box-shadow: 1px 1px 4px rgb(58, 58, 58);
-    width: 10em;
-    padding: 0 1em 0 1em;
-}
-@media screen and (max-width: 750px) {
-    menu:nth-child(1),
-    form#search>input[type="search"] {
-        width: 10em;
-    }
-    #searchbar ~ form#search>input[type="search"]:hover,
-    #searchbar ~ form#search>input[type="search"]:focus,
-    #searchbar ~ form#search>input[type="search"]:active {
-        display: none;
-    }
 }
