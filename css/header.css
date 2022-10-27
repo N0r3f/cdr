@@ -26,7 +26,7 @@ menu:nth-child(2) {
     justify-content: center;
     width: 6em;
 }
-#search, #link {
+#searchbar, #link {
     position: sticky;
     transition: .2s ease-in-out;
     box-shadow: 2px 2px 8px black;
@@ -48,7 +48,7 @@ input[type="search"] {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    width: 20em;
+    width: 12em;
     height: 2.8em;
     border-radius: 50px;
     bottom: 1px;
@@ -66,17 +66,17 @@ input[type="search"]:focus {
     display: block;
     border: 2px solid black;
     box-shadow: 1px 1px 4px rgb(58, 58, 58);
-    width: auto;
+    width: 18em;
     padding: 0 1em 0 1em;
 }
 @media screen and (max-width: 750px) {
     menu:nth-child(1),
     input[type="search"] {
-        width: 15em;
+        width: 12em;
     }
-    #search ~ input[type="search"]:hover,
-    #search ~ input[type="search"]:focus,
-    #search ~ input[type="search"]:active {
+    #searchbar ~ input[type="search"]:hover,
+    #searchbar ~ input[type="search"]:focus,
+    #searchbar ~ input[type="search"]:active {
         display: none;
     }
 }
