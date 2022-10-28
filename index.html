@@ -9,9 +9,9 @@
 <body ontouchstart="">
     <header>
         <menu>
-            <a href="#" onclick="document.getElementById('search').focus()"><img onclick="this.focus()" id="searchbar" src="media/assets/search.png" alt="Recherche" title="Recherche"></a>
-            <form action="." id="searchform">
-            <input type="search" name="search" id="search" role="search">
+            <a href="#" onload="document.getElementById('search').focus()"><img onclick="document.getElementById('search').focus()" id="searchbar" src="media/assets/search.png" alt="Recherche" title="Recherche"></a>
+            <form action id="searchform">
+            <input type="search" name="search" id="search" role="search" enterkeyhint="search" onload="this.focus()">
             </form>
         </menu>
         <menu>
