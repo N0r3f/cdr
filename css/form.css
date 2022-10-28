@@ -14,7 +14,16 @@ form:not(#searchform) {
     border: 2px solid rgb(179, 179, 179);
 }
 form:not(#searchform), aside {
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2389878c' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2389878c' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    transition: 1s ease-in-out;
+}
+form:not(#searchform):hover, aside:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+} 
+input {
+    font-size: 1.1em;
+    transition: .5s ease-in-out;
+    font-weight: bolder;
 }
 input:not(#search), textarea {
     display: flex;
@@ -32,18 +41,25 @@ input:not([type="submit"]) {
     padding-left: 2em;
 }
 input:not(#search) {
-    height: 3em;
+    height: 2.6em;
     border-radius: 50px;
 }
 textarea {
-    width: 95%;
-    height: 12em;
-    padding: 1em 1em 1em 2em;
+    width: 92%;
+    height: 10em;
+    padding: 1em 1em 1em 2.1em;
     border-radius: 20px 20px 0 20px;
+    font-weight: bolder;
 }
 input[type="submit"] {
     position: relative;
     top: 1em;
+}
+input[type="submit"]:hover {
+    filter: invert(1.5);
+}
+input:focus, textarea:focus {
+    filter: contrast(1.8);
 }
 span {
     display: flex;
@@ -54,11 +70,26 @@ span {
     height: 100%;
     border-radius: 50px;
     padding: 3.3%;
-    font-size: 1em;
     color:rgb(71, 71, 71);
     text-shadow: 1px 1px 32px rgb(216, 216, 216);
     box-shadow: 1px 1px 40px rgb(79, 79, 79);
     border: 2px solid rgb(179, 179, 179);
+    transition: .5s ease-in-out;
+}
+span > h3, h4, address {
+    font-size: 1.2em;
+}
+alert {
+    text-align: center;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    color: hsl(0, 69%, 38%);
+    width: 100%;
+    height: 5em;
+}
+i {
+    text-shadow: 2px 2px 6px hsl(0, 0%, 96%),
+    2px 2px 6px hsl(0, 0%, 96%);
 }
 @media screen and (max-width: 950px) {
     body {
@@ -70,6 +101,7 @@ span {
         width: 80%;
     }
     span, form:not(#searchform) {
-        margin: 2em 0 2em 0 ;
+        margin: 2em 0 3em 0;
+        padding: 4% 4% 8% 4%;
     }
 }

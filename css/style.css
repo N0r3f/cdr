@@ -1,6 +1,9 @@
 @import url(header.css);
 @import url(form.css);
 @import url(footer.css);
+/* {
+    filter: invert(2) saturate(.9);
+}*/
 body {
     display: flex;
     flex-flow: row wrap;
