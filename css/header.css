@@ -101,7 +101,7 @@ input#search {
     width: 11em;
     height: 2.2em;
     border-radius: 50px;
-    padding: 0 1em 0 1em;
+    padding: 0 1em 0 2em;
     font-size: 1.2em;
     font-weight: bolder;
     font-size-adjust: 1.2em; 
